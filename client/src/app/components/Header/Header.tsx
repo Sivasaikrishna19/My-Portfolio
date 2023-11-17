@@ -43,9 +43,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-between w-[200px]">
         <span
-          className={`cursor-pointer hover:text-[#b5651d] ${
+          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
             pathName === "/Resume"
               ? "transition ease-in-out delay-500 text-[#b5651d] "
               : ""
@@ -54,18 +54,18 @@ const Header = () => {
         >
           Resume
         </span>
-        <Divider type="vertical" />
+        {/* <Divider type="vertical" /> */}
         <div
-          className={`cursor-pointer hover:text-[#b5651d] ${
+          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100 ${
             pathName === "/Projects" ? "text-[#b5651d]" : ""
           }`}
           onClick={() => handleNavigation("/Projects")}
         >
           Projects
         </div>
-        <Divider type="vertical" />
+        {/* <Divider type="vertical" /> */}
         <span
-          className={`cursor-pointer hover:text-[#b5651d] ${
+          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
             pathName === "/Contact" ? "text-[#b5651d]" : ""
           }`}
           onClick={() => handleNavigation("/Contact")}

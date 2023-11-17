@@ -4,34 +4,36 @@ import { Divider } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
+import { projects } from "@/data/projects";
 
 const Page = () => {
-  const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
+  // const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
   const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [projects, setProjects] = useState<any>();
+  // const [projects, setProjects] = useState<any>();
 
   useEffect(() => {
+    setShouldAnimate(true);
     return () => {
       setShouldAnimate(false);
     };
   }, []);
 
-  const getProjects = () => {
-    axios
-      .get(BASE_URL + "/projects")
-      .then((res) => {
-        console.log(res.data, "projects");
-        setProjects(res.data);
-        setShouldAnimate(true);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  };
+  // const getProjects = () => {
+  //   axios
+  //     .get(BASE_URL + "/projects")
+  //     .then((res) => {
+  //       console.log(res.data, "projects");
+  //       setProjects(res.data);
+  //       setShouldAnimate(true);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // };
 
-  useEffect(() => {
-    getProjects();
-  }, []);
+  // useEffect(() => {
+  //   getProjects();
+  // }, []);
   return (
     <>
       <div
@@ -52,7 +54,7 @@ const Page = () => {
                   <div className="font-medium text-[28px] my-4">
                     {project?.name}
                   </div>
-                  <div>{project?.desc}</div>
+                  <div className="text-[18px] text-light">{project?.desc}</div>
                 </div>
                 <div className="w-[40%]">
                   {<img src={project?.img} className="w-3/4 h-auto" />}

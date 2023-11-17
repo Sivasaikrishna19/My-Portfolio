@@ -34,13 +34,17 @@
 .ant-divider-horizontal{
   margin-top: -16px !important
 }
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
 .typed {
   overflow: hidden;
   white-space: nowrap;
   width: 0;
   animation: typing;
-  animation-duration: 10.5s;
+  animation-duration: 7.5s;
   /* animation-timing-function: steps(40, end); */
   animation-fill-mode: forwards;
 }
@@ -95,4 +99,19 @@
 }
 .contact-b {
   animation: slideUp 2.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* TODO: Add support for other browsers */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(226, 219, 219);
+  outline: 0 solid rgb(242, 246, 250);
 }

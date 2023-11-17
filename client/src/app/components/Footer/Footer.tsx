@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div>
           <div className="font-semibold mb-1">Developed Using</div>
-          <div className="font-light">Next & Node</div>
+          <div className="font-light">Next - Typescript </div>
         </div>
       </div>
     </div>

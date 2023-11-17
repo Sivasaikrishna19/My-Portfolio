@@ -7,34 +7,36 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import { LinkOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import { resume } from "@/data/resume";
 
 const Page = () => {
-  const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
+  // const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
   const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [resume, setResume] = useState<any>();
+  // const [resume, setResume] = useState<any>();
 
   useEffect(() => {
+    setShouldAnimate(true);
     return () => {
       setShouldAnimate(false);
     };
   }, []);
 
-  const getResume = () => {
-    axios
-      .get(BASE_URL + "/resume")
-      .then((res) => {
-        console.log(res.data, "resume");
-        setResume(res.data);
-        setShouldAnimate(true);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  };
+  // const getResume = () => {
+  //   axios
+  //     .get(BASE_URL + "/resume")
+  //     .then((res) => {
+  //       console.log(res.data, "resume");
+  //       setResume(res.data);
+  //       setShouldAnimate(true);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // };
 
-  useEffect(() => {
-    getResume();
-  }, []);
+  // useEffect(() => {
+  //   getResume();
+  // }, []);
 
   return (
     <div
@@ -124,12 +126,12 @@ const Page = () => {
         <div className="w-[60%]">
           <div className="flex flex-1 my-6">
             <div className="mr-2 w-[30%] font-light">
-              {resume?.skills?.skills?.map((skill: string, index: number) => {
-                return (
-                  skill +
-                  (resume?.skills?.skills.length - 1 === index ? "." : ", ")
-                );
-              })}
+              <div>Top Skills</div>
+              <ul className="pl-2">
+                {resume?.skills?.skills?.map((skill: string, index: number) => {
+                  return <li>{skill}</li>;
+                })}
+              </ul>
             </div>
             <div className="w-[70%]">
               {resume?.skills?.expertise.map((item: any, index: number) => {
