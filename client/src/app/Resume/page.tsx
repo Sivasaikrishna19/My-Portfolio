@@ -5,7 +5,7 @@ import axios from "axios";
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
-import { LinkOutlined } from "@ant-design/icons";
+import { LinkOutlined, StarFilled } from "@ant-design/icons";
 import Link from "next/link";
 import { resume } from "@/data/resume";
 
@@ -126,8 +126,11 @@ const Page = () => {
         <div className="w-[60%]">
           <div className="flex flex-1 my-6">
             <div className="mr-2 w-[30%] font-light">
-              <div>Top Skills</div>
-              <ul className="pl-2">
+              <div>
+                <StarFilled className="mr-1" />
+                Top Skills
+              </div>
+              <ul className="pl-4">
                 {resume?.skills?.skills?.map((skill: string, index: number) => {
                   return <li>{skill}</li>;
                 })}

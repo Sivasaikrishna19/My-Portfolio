@@ -61,9 +61,11 @@ export default function Home() {
 
         <div className="w-[50%] flex">
           <div className="m-auto ">
-            <div className="text-[70px] mb-6 typed font-thin">Hello there!</div>
+            <div className="text-[48px] mb-6 typed font-thin">
+              Hey there, I'm Siva.
+            </div>
             <div className="text-[24px] mb-3 font-semibold">A Bit About Me</div>
-            <div className="font-light mb-8 text-[18px]">{about?.about}</div>
+            <p className="font-light mb-8 text-[18px]">{about?.about}</p>
             <div className="resume-b flex items-center w-full justify-evenly">
               <div
                 className="font-semibold rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] flex items-center justify-center bg-blue-400 text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 duration-500"
