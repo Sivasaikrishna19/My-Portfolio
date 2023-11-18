@@ -132,7 +132,7 @@ const Page = () => {
               </div>
               <ul className="pl-4">
                 {resume?.skills?.skills?.map((skill: string, index: number) => {
-                  return <li>{skill}</li>;
+                  return <li key={index}>{skill}</li>;
                 })}
               </ul>
             </div>
