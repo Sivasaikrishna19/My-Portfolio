@@ -88,27 +88,27 @@ const Page = () => {
         <div className="w-[50%]">
           Hey there! 👋
           <p>
-            I{"'"}m just a developer who finds immense satisfaction and joy from
-            user appreciation for the products I{"'"}ve developed. I{"'"}m
-            irresistibly drawn to playing with trending and impactful
+            I&apos;m just a developer who finds immense satisfaction and joy
+            from user appreciation for the products I&apos;ve developed.
+            I&apos;m irresistibly drawn to playing with trending and impactful
             technologies, constantly exploring new avenues for product
             development.
           </p>
           <p>
-            When I{"'"}m not coding, you{"'"}ll find me with my headphones on,
-            grooving to music. I{"'"}m also the guy who{"'"}s always up for a
+            When I&apos;m not coding, you&apos;ll find me with my headphones on,
+            grooving to music. I&apos;m also the guy who&apos;s always up for a
             chat about cricket, movies and memes ❤️️. I have a serious passion
             for good food, and I try to balance it out with a bit of exercise –
             or at least, I attempt to! 😄
           </p>{" "}
           <p>
-            I{"'"}m currently residing in downtown San Jose, I am pursuing my
+            I&apos;m currently residing in downtown San Jose, I am pursuing my
             graduate studies at San José State, majoring in Software
             Engineering. Actively seeking summer internships and open to
             contributing to intriguing open-source projects.
           </p>
           <p>
-            Ready to team up and create something cool? Let{"'"}s chat! 🚀✨
+            Ready to team up and create something cool? Let&apos;s chat! 🚀✨
           </p>
           <div className="mt-10">
             {'"'}Ah, Now You Know Me Better!{'"'}

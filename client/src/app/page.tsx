@@ -62,7 +62,7 @@ export default function Home() {
         <div className="w-[50%] flex">
           <div className="m-auto ">
             <div className="text-[48px] mb-6 typed font-thin">
-              Hey there, I{"'"}m Siva.
+              Hey there, I&apos;m Siva.
             </div>
             <div className="text-[24px] mb-3 font-semibold">A Bit About Me</div>
             <p className="font-light mb-8 text-[18px]">{about?.about}</p>
