@@ -75,7 +75,7 @@ const Page = () => {
                   <div className="font-semibold text-[18px] mb-3">
                     {item?.role}
                   </div>
-                  <div className="font-light">{item?.desc}</div>
+                  <p className="font-light break-words">{item?.desc}</p>
                 </div>
               </div>
             );

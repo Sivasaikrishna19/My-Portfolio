@@ -48,7 +48,7 @@ export default function Home() {
       }`}
     >
       <div className="w-[80%] m-auto  flex ">
-        <div className="w-[50%] m-auto flex">
+        <div className="w-[50%] m-auto flex profile-pic">
           <Image
             alt="Avatar Image"
             src={about.img}
@@ -86,10 +86,10 @@ export default function Home() {
               <div
                 className="contact-b font-semibold rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] flex items-center justify-center bg-[#80D8DA] text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-green-500 duration-500"
                 onClick={() => {
-                  handleNavigation("/Contact");
+                  handleNavigation("/About");
                 }}
               >
-                Contact
+                About
               </div>
             </div>
           </div>

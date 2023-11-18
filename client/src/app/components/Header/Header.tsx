@@ -68,9 +68,9 @@ const Header = () => {
           className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
             pathName === "/Contact" ? "text-[#b5651d]" : ""
           }`}
-          onClick={() => handleNavigation("/Contact")}
+          onClick={() => handleNavigation("/About")}
         >
-          Contact
+          About
         </span>
       </div>
     </div>
