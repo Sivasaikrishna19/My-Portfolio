@@ -48,7 +48,7 @@ export default function Home() {
       }`}
     >
       <div className="w-[80%] m-auto  flex ">
-        <div className="w-[50%] m-auto flex profile-pic">
+        <div className="w-[50%] m-auto flex profile-pic p-8">
           <Image
             alt="Avatar Image"
             src={about.img}
@@ -56,6 +56,7 @@ export default function Home() {
             height={500}
             loading={"lazy"}
             className="rounded-full"
+            layout="responsive"
           />
         </div>
 
