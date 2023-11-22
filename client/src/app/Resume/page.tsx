@@ -125,7 +125,7 @@ const Page = () => {
         </div>
         <div className="w-[60%]">
           <div className="flex flex-1 my-6">
-            <div className="mr-2 w-[30%] font-light">
+            <div className="mr-2 w-[30%] font-light mr-2">
               <div>
                 <StarFilled className="mr-1" />
                 Top Skills
