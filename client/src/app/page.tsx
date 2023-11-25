@@ -63,26 +63,30 @@ export default function Home() {
         <div className="w-[50%] flex max-md:w-full">
           <div className="m-auto">
             <div className="mb-4 sm:hidden w-full flex justify-center">
-            <div className=" w-[250px] h-[250px] ">
-          <Image
-            alt="Avatar Image"
-            src={about.img}
-            width={50}
-            height={50}
-            loading={"lazy"}
-             className="rounded-full w-[50px]"
-            layout="responsive"
-          />
-          </div>
-          </div>
+              <div className=" w-[250px] h-[250px] ">
+                <Image
+                  alt="Avatar Image"
+                  src={about.img}
+                  width={50}
+                  height={50}
+                  loading={"lazy"}
+                  className="rounded-full w-[50px]"
+                  layout="responsive"
+                />
+              </div>
+            </div>
             <div className="text-[48px] mb-6 typed font-thin max-md:text-[24px]">
               Hey there, I&apos;m Siva.
             </div>
-            <div className="text-[24px] mb-3 font-semibold max-md:text-[16px]">A Bit About Me</div>
-            <p className="font-light mb-8 text-[18px] max-md:text-[14px]">{about?.about}</p>
-            <div className="resume-b flex items-center w-full justify-evenly">
+            <div className="text-[24px] mb-3 font-semibold max-md:text-[16px]">
+              A Bit About Me
+            </div>
+            <p className="font-light mb-8 text-[18px] max-md:text-[14px]">
+              {about?.about}
+            </p>
+            <div className=" flex items-center w-full justify-evenly py-6">
               <div
-                className="font-semibold rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] max-md:w-[80px] max-md:h-[80px] flex items-center justify-center bg-blue-400 text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 duration-500"
+                className="resume-b font-semibold rounded-full border-[1px] border-black border-solid w-[120px] h-[120px] max-md:w-[80px] max-md:h-[80px] flex items-center justify-center bg-blue-400 text-white cursor-pointer hover:shadow-lg transition ease-in-out delay-150 hover:bg-indigo-500 duration-500"
                 onClick={() => {
                   handleNavigation("/Resume");
                 }}
@@ -109,7 +113,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[15vh]"></div>
+      <div className="h-[8vh] max-md:hidden"></div>
       <Footer />
     </div>
   );

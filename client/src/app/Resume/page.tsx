@@ -46,7 +46,7 @@ const Page = () => {
           : "page-exit page-exit-active"
       }`}
     >
-      <div className=" mb-8 w-[70%] m-auto flex items-center">
+      <div className=" mb-8 w-[70%] m-auto flex items-center max-md:w-[85%]">
         <span className="text-[42px] font-semibold">Resume</span>{" "}
         <span className="ml-2 mt-3">
           <Link
@@ -58,22 +58,27 @@ const Page = () => {
           </Link>
         </span>
       </div>
-      <div className="flex  w-[70%] m-auto">
-        <div className="w-[40%]">
+      <div className="flex  w-[70%] m-auto max-md:flex-col max-md:w-[85%]">
+        <div className="w-[40%] max-md:w-full">
           <div className="font-medium text-[28px] my-4">Work Experience</div>
         </div>
-        <div className="w-[60%]">
+        <div className="w-[60%] max-md:w-full">
           {resume?.work_experience?.map((item: any, index: number) => {
             return (
-              <div className="flex flex-1 my-6" key={index}>
-                <div className="w-[30%] font-light mr-2 ">
+              <div className="flex flex-1 my-6 max-md:flex-col " key={index}>
+                <div className="w-[30%] font-light mr-2 max-md:hidden">
                   {dayjs(item?.start_date).format("MMM, YYYY") +
                     " - " +
                     dayjs(item?.end_date).format("MMM, YYYY")}
                 </div>
-                <div className="w-[70%]">
+                <div className="w-[70%] max-md:w-full">
                   <div className="font-semibold text-[18px] mb-3">
                     {item?.role}
+                  </div>
+                  <div className="w-[30%] font-light mr-2 max-md:w-full sm:hidden">
+                    {dayjs(item?.start_date).format("MMM, YYYY") +
+                      " - " +
+                      dayjs(item?.end_date).format("MMM, YYYY")}
                   </div>
                   <p className="font-light break-words">{item?.desc}</p>
                 </div>
@@ -85,15 +90,15 @@ const Page = () => {
       <div className="my-4 px-6">
         <Divider plain className="divider "></Divider>
       </div>
-      <div className="flex w-[70%] m-auto">
-        <div className="w-[40%]">
+      <div className="flex w-[70%] m-auto max-md:w-[85%] max-md:flex-col">
+        <div className="w-[40%] max-md:w-full">
           <div className="font-medium text-[28px] my-4">Education</div>
         </div>
-        <div className="w-[60%]">
+        <div className="w-[60%] max-md:w-full">
           {resume?.education?.map((item: any, index: number) => {
             return (
-              <div className="flex flex-1 my-6" key={index}>
-                <div className="w-[30%] font-light mr-2">
+              <div className="flex flex-1 my-6 max-md:flex-col" key={index}>
+                <div className="w-[30%] font-light mr-2 max-md:w-full max-md:hidden">
                   {!item?.in_progress
                     ? dayjs(item?.start_date).format("MMM, YYYY") +
                       " - " +
@@ -102,10 +107,20 @@ const Page = () => {
                       " - " +
                       "Present"}
                 </div>
-                <div className="w-[70%]">
-                  <div className="font-semibold text-[18px] mb-3">
+                <div className="w-[70%] max-md:w-full">
+                  <div className="font-semibold text-[18px] mb-3 w-full">
                     {item?.college_name}
+                    <div className="w-[30%] font-light mt-2 max-md:w-full sm:hidden">
+                      {!item?.in_progress
+                        ? dayjs(item?.start_date).format("MMM, YYYY") +
+                          " - " +
+                          dayjs(item?.end_date).format("MMM, YYYY")
+                        : dayjs(item?.start_date).format("MMM, YYYY") +
+                          " - " +
+                          "Present"}
+                    </div>
                   </div>
+
                   <div className="font-light mb-2">{item?.major}</div>
                   <div className="font-light">
                     <span>GPA</span> <span>{item?.gpa}</span>
@@ -119,24 +134,24 @@ const Page = () => {
       <div className="my-4 px-6">
         <Divider plain className="divider"></Divider>
       </div>
-      <div className="flex mb-12 w-[70%] m-auto">
-        <div className="w-[40%]">
+      <div className="flex mb-12 w-[70%] m-auto max-md:flex-col max-md:w-[85%]">
+        <div className="w-[40%] max-md:w-full">
           <div className="font-medium text-[28px] my-4">Skills & Expertise</div>
         </div>
-        <div className="w-[60%]">
-          <div className="flex flex-1 my-6">
-            <div className="mr-2 w-[30%] font-light mr-2">
+        <div className="w-[60%] max-md:w-full">
+          <div className="flex flex-1 my-6 max-md:flex-col">
+            <div className="mr-2 w-[30%] font-light mr-2 max-md:w-full">
               <div>
                 <StarFilled className="mr-1" />
                 Top Skills
               </div>
-              <ul className="pl-4">
+              <ul className="pl-4 max-md:columns-2">
                 {resume?.skills?.skills?.map((skill: string, index: number) => {
                   return <li key={index}>{skill}</li>;
                 })}
               </ul>
             </div>
-            <div className="w-[70%]">
+            <div className="w-[70%] max-md:w-full ">
               {resume?.skills?.expertise.map((item: any, index: number) => {
                 return (
                   <div key={index}>
