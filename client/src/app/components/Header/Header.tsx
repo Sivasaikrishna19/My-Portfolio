@@ -1,6 +1,6 @@
 "use client";
 import { MenuOutlined } from "@ant-design/icons";
-import { Divider } from "antd";
+import { Divider, Dropdown, MenuProps } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 
 import React, { useEffect } from "react";
@@ -16,6 +16,30 @@ const Header = () => {
   const handleNavigation = (path: string) => {
     router.push(path);
   };
+  const items: MenuProps["items"] = [
+    {
+      label: "Resume",
+      key: "0",
+      onClick: () => {
+        handleNavigation("/Resume");
+      },
+    },
+    {
+      label: "Projects",
+      key: "1",
+      onClick: () => {
+        handleNavigation("/Projects");
+      },
+    },
+
+    {
+      label: "About",
+      key: "2",
+      onClick: () => {
+        handleNavigation("/About");
+      },
+    },
+  ];
   return (
     <div className="bg-[#F3F3F3] py-6 px-12 flex justify-between pr-24 max-md:px-[26px]">
       <div className="flex items-center justify-between w-full sm:hidden">
@@ -29,7 +53,9 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <MenuOutlined />
+          <Dropdown menu={{ items }} trigger={["click"]}>
+            <MenuOutlined />
+          </Dropdown>
         </div>
       </div>
       <div className="flex items-center max-md:hidden">
