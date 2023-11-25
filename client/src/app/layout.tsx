@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className={inter.className}>
           <Header />
           <div className="bg-[#F3F3F3]">
-            <div className=" m-auto pt-[100px]">{children}</div>
+            <div className=" m-auto pt-[100px] max-md:pt-[15px]">{children}</div>
           </div>
           {/* <Footer /> */}
         </div>

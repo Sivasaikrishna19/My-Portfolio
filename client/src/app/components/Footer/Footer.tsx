@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-6 py-12 bg-[#F3F3F3]">
+    <div className="px-6 py-12 bg-[#F3F3F3] max-md:hidden">
       <div>
         <Divider plain className="divider">
           Contact

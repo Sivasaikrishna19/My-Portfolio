@@ -1,4 +1,5 @@
 "use client";
+import { MenuOutlined } from "@ant-design/icons";
 import { Divider } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -16,11 +17,25 @@ const Header = () => {
     router.push(path);
   };
   return (
-    <div className="bg-[#F3F3F3] py-6 px-12 flex justify-between pr-24">
-      <div className="flex items-center">
+    <div className="bg-[#F3F3F3] py-6 px-12 flex justify-between pr-24 max-md:px-[26px]">
+      <div className="flex items-center justify-between w-full sm:hidden">
+        <div
+          className="flex items-center"
+          onClick={() => handleNavigation("/")}
+        >
+          <div className="w-[12px] h-[12px] bg-[#b5651d] rounded-full"></div>
+          <div className="ml-2 font-mono">
+            {"<"}SivaSaiKrishna{"/>"}
+          </div>
+        </div>
+        <div>
+          <MenuOutlined />
+        </div>
+      </div>
+      <div className="flex items-center max-md:hidden">
         <div className="rounded-[999px] text-[#b5651d] bg-[#b5651d] w-fit px-[7px] py-[2px]">
           {" "}
-          0{" "}
+          <span>0</span>{" "}
         </div>
         <div className="ml-2 flex items-center cursor-pointer">
           <span
@@ -43,7 +58,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between w-[200px]">
+      <div className="flex items-center justify-between w-[200px] max-md:hidden">
         <span
           className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
             pathName === "/Resume"
