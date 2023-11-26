@@ -37,31 +37,31 @@ const Page = () => {
   return (
     <>
       <div
-        className={`w-full${
+        className={`w-full pb-1 ${
           shouldAnimate
             ? "page-enter page-enter-active"
             : "page-exit page-exit-active"
         }`}
       >
-        <div className="font-semibold text-[42px] w-[70%] m-auto mb-8">
+        <div className="font-semibold text-[42px] w-[70%] m-auto mb-8 max-md:w-[85%]">
           Projects
         </div>
         {projects?.map((project: any, index: number) => {
           return (
             <div className="w-full my-8" key={index}>
-              <div className="flex w-[70%] m-auto">
-                <div className="w-[60%] pr-6">
+              <div className="flex w-[70%] m-auto max-md:w-[85%] max-md:flex-col">
+                <div className="w-[60%] pr-6 max-md:w-full">
                   <div className="font-medium text-[28px] my-4">
                     {project?.name}
                   </div>
                   <div className="text-[18px] text-light">{project?.desc}</div>
                 </div>
-                <div className="w-[40%]">
+                <div className="w-[40%] max-md:w-full max-md:hidden">
                   {<img src={project?.img} className="w-3/4 h-auto" />}
                 </div>
               </div>
               {index !== projects.length - 1 && (
-                <div className="my-8 px-6">
+                <div className="my-8 px-6 max-md:hidden">
                   <Divider plain className="divider "></Divider>
                 </div>
               )}
