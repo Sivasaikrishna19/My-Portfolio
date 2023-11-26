@@ -75,7 +75,8 @@ const Page = () => {
                   <div className="font-semibold text-[18px] mb-3">
                     {item?.role}
                   </div>
-                  <div className="w-[30%] font-light mr-2 max-md:w-full sm:hidden">
+                  <div className="text-gray-500">{item?.company}</div>
+                  <div className="w-[30%] font-light mr-2 max-md:w-full sm:hidden my-2 text-gray-500">
                     {dayjs(item?.start_date).format("MMM, YYYY") +
                       " - " +
                       dayjs(item?.end_date).format("MMM, YYYY")}
