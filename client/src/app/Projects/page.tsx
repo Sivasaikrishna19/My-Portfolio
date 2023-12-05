@@ -5,11 +5,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import { projects } from "@/data/projects";
+import { LinkOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import dayjs from "dayjs";
 
 const Page = () => {
-  // const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
   const [shouldAnimate, setShouldAnimate] = useState(false);
-  // const [projects, setProjects] = useState<any>();
 
   useEffect(() => {
     setShouldAnimate(true);
@@ -18,22 +19,6 @@ const Page = () => {
     };
   }, []);
 
-  // const getProjects = () => {
-  //   axios
-  //     .get(BASE_URL + "/projects")
-  //     .then((res) => {
-  //       console.log(res.data, "projects");
-  //       setProjects(res.data);
-  //       setShouldAnimate(true);
-  //     })
-  //     .catch((e) => {
-  //       console.log(e);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   getProjects();
-  // }, []);
   return (
     <>
       <div
@@ -51,8 +36,26 @@ const Page = () => {
             <div className="w-full my-8" key={index}>
               <div className="flex w-[70%] m-auto max-md:w-[85%] max-md:flex-col">
                 <div className="w-[60%] pr-6 max-md:w-full">
-                  <div className="font-medium text-[28px] my-4">
-                    {project?.name}
+                  <div className="font-medium text-[28px] mt-4 flex items-center mt-2">
+                    <div>{project?.name} </div>
+                    {project?.git !== "" && (
+                      <div className="text-[14px] ml-3 hover:text-blue-400 cursor-pointer">
+                        <Link
+                          href={project?.git}
+                          target="_blank"
+                          className="text-black"
+                        >
+                          Git link <LinkOutlined />
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                  <div className="text-gray-500 font-light mt-2 mb-4">
+                    {dayjs(project?.start_date).format("MMM, YYYY") +
+                      " - " +
+                      (project?.end_date === ""
+                        ? "Present"
+                        : dayjs(project?.end_date).format("MMM, YYYY"))}
                   </div>
                   <div className="text-[18px] text-light">{project?.desc}</div>
                 </div>
@@ -60,11 +63,11 @@ const Page = () => {
                   {<img src={project?.img} className="w-3/4 h-auto" />}
                 </div>
               </div>
-              {index !== projects.length - 1 && (
+              {/* {index !== projects.length - 1 && (
                 <div className="my-8 px-6 max-md:hidden">
                   <Divider plain className="divider "></Divider>
                 </div>
-              )}
+              )} */}
             </div>
           );
         })}

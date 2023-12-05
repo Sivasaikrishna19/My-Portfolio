@@ -18,15 +18,22 @@ const Header = () => {
   };
   const items: MenuProps["items"] = [
     {
-      label: "Resume",
+      label: "Home",
       key: "0",
+      onClick: () => {
+        handleNavigation("/");
+      },
+    },
+    {
+      label: "Resume",
+      key: "1",
       onClick: () => {
         handleNavigation("/Resume");
       },
     },
     {
       label: "Projects",
-      key: "1",
+      key: "2",
       onClick: () => {
         handleNavigation("/Projects");
       },
@@ -34,7 +41,7 @@ const Header = () => {
 
     {
       label: "About",
-      key: "2",
+      key: "3",
       onClick: () => {
         handleNavigation("/About");
       },
@@ -84,7 +91,17 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between w-[200px] max-md:hidden">
+      <div className="flex items-center justify-between  max-md:hidden">
+        <div
+          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
+            pathName === "/"
+              ? "transition ease-in-out delay-500 text-[#b5651d] "
+              : ""
+          }`}
+          onClick={() => handleNavigation("/")}
+        >
+          Home
+        </div>
         <span
           className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
             pathName === "/Resume"
@@ -105,14 +122,14 @@ const Header = () => {
           Projects
         </div>
         {/* <Divider type="vertical" /> */}
-        <span
-          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100${
-            pathName === "/Contact" ? "text-[#b5651d]" : ""
+        <div
+          className={`cursor-pointer py-2 px-3 rounded-full hover:text-[#b5651d] hover:bg-[#e2b888] transition-background ease-in duration-300 delay-100 ${
+            pathName === "/About" ? "text-[#b5651d]" : ""
           }`}
           onClick={() => handleNavigation("/About")}
         >
           About
-        </span>
+        </div>
       </div>
     </div>
   );

@@ -93,8 +93,7 @@ const Page = () => {
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I&apos;m just a developer
             who finds immense satisfaction and joy from user appreciation for
             the products I&apos;ve developed. I&apos;m irresistibly drawn to
-            playing with trending and impactful technologies, constantly
-            exploring new avenues for product development.
+            playing with trending and impactful technologies.
           </p>
           <p>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; When I&apos;m not coding,
