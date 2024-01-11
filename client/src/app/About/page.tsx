@@ -6,10 +6,9 @@ import {
   PhoneFilled,
   WhatsAppOutlined,
 } from "@ant-design/icons";
-import { Input } from "antd";
+
 import React, { useEffect, useState } from "react";
 
-const { TextArea } = Input;
 
 const Page = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -100,7 +99,7 @@ const Page = () => {
             you&apos;ll find me with my headphones on, grooving to music.
             I&apos;m also the guy who&apos;s always up for a chat about cricket,
             movies and memes ❤️️. I have a serious passion for good food, and I
-            try to balance it out with a bit of exercise – or at least, I
+            try to balance it out with a bit of exercise or at least, I
             attempt to! 😄
           </p>{" "}
           <p>
@@ -108,10 +107,10 @@ const Page = () => {
             residing in downtown San Jose, I am pursuing my graduate studies at
             San José State, majoring in Software Engineering. Actively seeking
             summer internships and open to contributing to intriguing
-            open-source projects.
+            open-source projects!
           </p>
           <p>
-            Ready to team up and create something cool? Let&apos;s chat! 🚀✨
+            Ready to team up and create something cool? Let&apos;s connect! ✨
           </p>
           <div className="mt-10">
             {'"'}Could I BE any more transparent?{'"'}

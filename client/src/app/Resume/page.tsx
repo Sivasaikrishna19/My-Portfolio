@@ -10,9 +10,7 @@ import Link from "next/link";
 import { resume } from "@/data/resume";
 
 const Page = () => {
-  // const BASE_URL = "https://3d94bf35-a344-44db-9971-ae31be2d1a86.mock.pstmn.io";
   const [shouldAnimate, setShouldAnimate] = useState(false);
-  // const [resume, setResume] = useState<any>();
 
   useEffect(() => {
     setShouldAnimate(true);
@@ -20,23 +18,6 @@ const Page = () => {
       setShouldAnimate(false);
     };
   }, []);
-
-  // const getResume = () => {
-  //   axios
-  //     .get(BASE_URL + "/resume")
-  //     .then((res) => {
-  //       console.log(res.data, "resume");
-  //       setResume(res.data);
-  //       setShouldAnimate(true);
-  //     })
-  //     .catch((e) => {
-  //       console.log(e);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   getResume();
-  // }, []);
 
   return (
     <div
