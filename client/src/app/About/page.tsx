@@ -22,11 +22,10 @@ const Page = () => {
 
   return (
     <div
-      className={`w-full flex ${
-        shouldAnimate
+      className={`w-full flex ${shouldAnimate
           ? "page-enter page-enter-active"
           : "page-exit page-exit-active"
-      }`}
+        }`}
     >
       <div className=" w-[70%] m-auto flex max-md:w-[85%] max-md:flex-col">
         <div className="w-[50%] max-md:w-full ">
@@ -86,7 +85,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%] max-md:w-full">
+        <div className="w-[50%] max-md:w-full text-justify">
           Hey there! 👋
           <p>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I&apos;m just a developer

@@ -41,11 +41,10 @@ export default function Home() {
   // }, []);
   return (
     <div
-      className={`w-full ${
-        shouldAnimate
+      className={`w-full ${shouldAnimate
           ? "page-enter page-enter-active"
           : "page-exit page-exit-active"
-      }`}
+        }`}
     >
       <div className="w-[80%] m-auto  flex ">
         <div className="w-[50%] m-auto flex profile-pic p-8 max-md:hidden">
@@ -81,7 +80,7 @@ export default function Home() {
             <div className="text-[24px] mb-3 font-semibold max-md:text-[16px]">
               A Bit About Me
             </div>
-            <p className="font-light mb-8 text-[18px] max-md:text-[14px]">
+            <p className="font-light mb-8 text-[18px] max-md:text-[14px] text-justify">
               {about?.about}
             </p>
             <div className=" flex items-center w-full justify-evenly py-6">
