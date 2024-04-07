@@ -22,11 +22,10 @@ const Page = () => {
   return (
     <>
       <div
-        className={`w-full pb-1 ${
-          shouldAnimate
+        className={`w-full pb-1 ${shouldAnimate
             ? "page-enter page-enter-active"
             : "page-exit page-exit-active"
-        }`}
+          }`}
       >
         <div className="font-semibold text-[42px] w-[70%] m-auto mb-8 max-md:w-[85%]">
           Projects
@@ -57,7 +56,7 @@ const Page = () => {
                         ? "Present"
                         : dayjs(project?.end_date).format("MMM, YYYY"))}
                   </div>
-                  <div className="text-[18px] text-light">{project?.desc}</div>
+                  <div className="text-[18px] text-light text-justify">{project?.desc}</div>
                 </div>
                 <div className="w-[40%] max-md:w-full max-md:hidden">
                   {<img src={project?.img} className="w-3/4 h-auto" />}

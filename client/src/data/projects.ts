@@ -11,7 +11,7 @@ export const projects = [
     img: "https://previews.123rf.com/images/opka/opka1604/opka160400001/56863932-house-search-concept.jpg",
     name: "Accomate",
     desc: "Developing a web application to assist students in finding accommodations near universities, employing React, Redux, Tailwind, and Flask. I've seamlessly integrated Google Auth for enhanced security. Embracing this opportunity to learn and expand my skill set.",
-    git: "https://github.com/msavinash/point2",
+    git: "https://github.com/Sivasaikrishna19/Accomate",
     start_date: "10-10-2023",
     end_date: "",
   },

@@ -42,8 +42,8 @@ export default function Home() {
   return (
     <div
       className={`w-full ${shouldAnimate
-          ? "page-enter page-enter-active"
-          : "page-exit page-exit-active"
+        ? "page-enter page-enter-active"
+        : "page-exit page-exit-active"
         }`}
     >
       <div className="w-[80%] m-auto  flex ">

@@ -1,4 +1,4 @@
-import { LinkedinOutlined } from "@ant-design/icons";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import { Divider } from "antd";
 import Link from "next/link";
 import React from "react";
@@ -30,6 +30,14 @@ const Footer = () => {
             >
               <LinkedinOutlined className="text-[18px] cursor-pointer" />
             </Link>
+            <Link
+              href="https://github.com/Sivasaikrishna19?tab=repositories"
+              target="_blank"
+              className="text-black"
+            >
+              <GithubOutlined className="text-[18px] cursor-pointer ml-2" />
+            </Link>
+
           </div>
         </div>
         <div>

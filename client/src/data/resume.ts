@@ -56,12 +56,13 @@ export const resume = {
       "NextJS",
       "Angular",
       "NodeJS",
+      ".NET",
       "MongoDB",
       "PostgreSQL",
       "C++",
       "Python",
       "System Architechture",
-      "Product Designing",
+
     ],
     expertise: [
       {
