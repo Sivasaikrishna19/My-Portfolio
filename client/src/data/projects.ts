@@ -4,7 +4,7 @@ export const projects = [
     name: "CineSquare",
     desc: "Developed a Movie Ticket Booking web application utilizing React for the frontend and Django for the backend. Successfully hosted the application on an EC2 AWS instance, showcasing proficiency in full-stack development, deployment, and integration of key technologies.",
     git: "https://github.com/gopinathsjsu/teamproject-tech-titans",
-    start_date: "9-30-2023",
+    start_date: "8-30-2023",
     end_date: "12-1-2023",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     name: "Accomate",
     desc: "Developing a web application to assist students in finding accommodations near universities, employing React, Redux, Tailwind, and Flask. I've seamlessly integrated Google Auth for enhanced security. Embracing this opportunity to learn and expand my skill set.",
     git: "https://github.com/Sivasaikrishna19/Accomate",
-    start_date: "10-10-2023",
+    start_date: "11-10-2023",
     end_date: "",
   },
   {
