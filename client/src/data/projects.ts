@@ -3,7 +3,7 @@ export const projects = [
     img: "https://user-images.githubusercontent.com/26500550/146297406-eb97f213-2380-48fb-a7ae-86b54965199c.png",
     name: "CineSquare",
     desc: "Developed a Movie Ticket Booking web application utilizing React for the frontend and Django for the backend. Successfully hosted the application on an EC2 AWS instance, showcasing proficiency in full-stack development, deployment, and integration of key technologies.",
-    git: "https://github.com/gopinathsjsu/teamproject-tech-titans",
+    git: "https://github.com/Sivasaikrishna19/CineSquare",
     start_date: "8-30-2023",
     end_date: "12-1-2023",
   },

@@ -21,16 +21,17 @@ const Page = () => {
 
   return (
     <div
-      className={`w-full  ${shouldAnimate
-        ? "page-enter page-enter-active"
-        : "page-exit page-exit-active"
-        }`}
+      className={`w-full  ${
+        shouldAnimate
+          ? "page-enter page-enter-active"
+          : "page-exit page-exit-active"
+      }`}
     >
       <div className=" mb-8 w-[70%] m-auto flex items-center max-md:w-[85%]">
         <span className="text-[42px] font-semibold">Resume</span>{" "}
         <span className="ml-2 mt-3">
           <Link
-            href="https://drive.google.com/file/d/1GrKoynOJFwEwLMTT-HiVuklIdyu9X41-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1HtKnAk7BpeonhHUc6YyKZCPzAEzai6KV/view?usp=sharing"
             target="_blank"
             className="text-blue-500"
           >
@@ -82,11 +83,11 @@ const Page = () => {
                 <div className="w-[30%] font-light mr-2 max-md:w-full max-md:hidden">
                   {!item?.in_progress
                     ? dayjs(item?.start_date).format("MMM, YYYY") +
-                    " - " +
-                    dayjs(item?.end_date).format("MMM, YYYY")
+                      " - " +
+                      dayjs(item?.end_date).format("MMM, YYYY")
                     : dayjs(item?.start_date).format("MMM, YYYY") +
-                    " - " +
-                    "Present"}
+                      " - " +
+                      "Present"}
                 </div>
                 <div className="w-[70%] max-md:w-full">
                   <div className="font-semibold text-[18px] mb-3 w-full">
@@ -94,11 +95,11 @@ const Page = () => {
                     <div className="w-[30%] font-light mt-2 max-md:w-full sm:hidden">
                       {!item?.in_progress
                         ? dayjs(item?.start_date).format("MMM, YYYY") +
-                        " - " +
-                        dayjs(item?.end_date).format("MMM, YYYY")
+                          " - " +
+                          dayjs(item?.end_date).format("MMM, YYYY")
                         : dayjs(item?.start_date).format("MMM, YYYY") +
-                        " - " +
-                        "Present"}
+                          " - " +
+                          "Present"}
                     </div>
                   </div>
 
