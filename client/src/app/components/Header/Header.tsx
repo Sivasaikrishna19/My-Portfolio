@@ -81,13 +81,9 @@ const Header = () => {
               {<span className="text-[20px]">{" />"}</span>}
             </span>
           </span>{" "}
-          <div className="flex items-center ">
-            <div className="text-gray-400 ml-2 mr-[2px] text-[18px] ">
-              {"//"}
-            </div>
-            <div className="font-sm text-gray-400 text-[18px]">
-              Full Stack Developer
-            </div>
+          <div className="flex items-center pulse text-gray-400">
+            <div className=" ml-2 mr-[2px] text-[18px] ">{"//"}</div>
+            <div className="font-sm  text-[18px]">Full Stack Developer</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 export const about: any = {
   about:
-    "I'm a graduate student at San Jose State University, majoring in Software Engineering with a specialization in Enterprise Software Technologies. With over 3 years of experience in technologies such as React, Angular, React Native, Next, and Node, I am actively seeking summer internships for 2024.",
+    "I'm a Software Engineering intern at NBCUniversal and a final-year Software Engineering student at San Jose State University. With over 4 years of experience in technologies like React, Next, Angular, React Native, Nest, Node, and both relational and non-relational databases, I am actively seeking full-time opportunities to contribute.",
   img: "https://i.ibb.co/BtVJWVf/Whats-App-Image-2023-11-17-at-1-46-01-PM.jpg",
 };

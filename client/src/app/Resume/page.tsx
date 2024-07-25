@@ -1,11 +1,11 @@
 "use client";
 
-import { Divider, Progress } from "antd";
+import { Button, Divider, Progress } from "antd";
 import axios from "axios";
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
-import { LinkOutlined, StarFilled } from "@ant-design/icons";
+import { DownloadOutlined, LinkOutlined, StarFilled } from "@ant-design/icons";
 import Link from "next/link";
 import { resume } from "@/data/resume";
 
@@ -27,17 +27,17 @@ const Page = () => {
           : "page-exit page-exit-active"
       }`}
     >
-      <div className=" mb-8 w-[70%] m-auto flex items-center max-md:w-[85%]">
-        <span className="text-[42px] font-semibold">Resume</span>{" "}
-        <span className="ml-2 mt-3">
-          <Link
-            href="https://drive.google.com/file/d/1HtKnAk7BpeonhHUc6YyKZCPzAEzai6KV/view?usp=sharing"
+      <div className=" mb-8 w-[70%] m-auto flex items-center max-md:w-[85%] justify-between">
+        <div className="text-[42px] font-semibold">Resume</div>{" "}
+        <div className="ml-2 mt-1">
+          <Button
+            href="https://drive.google.com/file/d/1244s-gGZIpmtoVsxIFP4dEFqpNca4tpY/view?usp=sharing"
             target="_blank"
-            className="text-blue-500"
+            className=" flex items-center rounded-md"
           >
-            <LinkOutlined className="text-[20px]" />
-          </Link>
-        </span>
+            <DownloadOutlined className="text-[18px] " /> Download
+          </Button>
+        </div>
       </div>
       <div className="flex  w-[70%] m-auto max-md:flex-col max-md:w-[85%]">
         <div className="w-[40%] max-md:w-full">
@@ -48,9 +48,13 @@ const Page = () => {
             return (
               <div className="flex flex-1 my-6 max-md:flex-col " key={index}>
                 <div className="w-[30%] font-light mr-2 max-md:hidden">
-                  {dayjs(item?.start_date).format("MMM, YYYY") +
-                    " - " +
-                    dayjs(item?.end_date).format("MMM, YYYY")}
+                  {!item?.in_progress
+                    ? dayjs(item?.start_date).format("MMM, YYYY") +
+                      " - " +
+                      dayjs(item?.end_date).format("MMM, YYYY")
+                    : dayjs(item?.start_date).format("MMM, YYYY") +
+                      " - " +
+                      "Present"}
                 </div>
                 <div className="w-[70%] max-md:w-full text-justify">
                   <div className="font-semibold text-[18px] mb-3">
@@ -58,9 +62,13 @@ const Page = () => {
                   </div>
                   <div className="text-gray-500">{item?.company}</div>
                   <div className="w-[30%] font-light mr-2 max-md:w-full sm:hidden my-2 text-gray-500">
-                    {dayjs(item?.start_date).format("MMM, YYYY") +
-                      " - " +
-                      dayjs(item?.end_date).format("MMM, YYYY")}
+                    {!item?.in_progress
+                      ? dayjs(item?.start_date).format("MMM, YYYY") +
+                        " - " +
+                        dayjs(item?.end_date).format("MMM, YYYY")
+                      : dayjs(item?.start_date).format("MMM, YYYY") +
+                        " - " +
+                        "Present"}
                   </div>
                   <p className="font-light break-words">{item?.desc}</p>
                 </div>
