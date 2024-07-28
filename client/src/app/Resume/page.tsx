@@ -31,7 +31,7 @@ const Page = () => {
         <div className="text-[42px] font-semibold">Resume</div>{" "}
         <div className="ml-2 mt-1">
           <Button
-            href="https://drive.google.com/file/d/1244s-gGZIpmtoVsxIFP4dEFqpNca4tpY/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Vm8uklpwi6nQBOkPsTO_Pd5yjuHkmLYa/view?usp=sharing"
             target="_blank"
             className=" flex items-center rounded-md"
           >
