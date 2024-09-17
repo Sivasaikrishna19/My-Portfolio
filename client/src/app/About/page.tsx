@@ -9,7 +9,6 @@ import {
 
 import React, { useEffect, useState } from "react";
 
-
 const Page = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
@@ -22,10 +21,11 @@ const Page = () => {
 
   return (
     <div
-      className={`w-full flex ${shouldAnimate
+      className={`w-full flex ${
+        shouldAnimate
           ? "page-enter page-enter-active"
           : "page-exit page-exit-active"
-        }`}
+      }`}
     >
       <div className=" w-[70%] m-auto flex max-md:w-[85%] max-md:flex-col">
         <div className="w-[50%] max-md:w-full ">
@@ -74,10 +74,10 @@ const Page = () => {
                   </a>
                 </div>
               </div>
-              <div className="mb-4 flex items-center ml-4">
+              {/* <div className="mb-4 flex items-center ml-4">
                 <InstagramOutlined />
                 <div className="font-light ml-[6px]">nssk.253</div>
-              </div>
+              </div> */}
             </div>
             <div className="mb-4 flex items-center">
               <PhoneFilled /> <WhatsAppOutlined className="ml-[6px]" />
@@ -98,8 +98,8 @@ const Page = () => {
             you&apos;ll find me with my headphones on, grooving to music.
             I&apos;m also the guy who&apos;s always up for a chat about cricket,
             movies and memes ❤️️. I have a serious passion for good food, and I
-            try to balance it out with a bit of exercise or at least, I
-            attempt to! 😄
+            try to balance it out with a bit of exercise or at least, I attempt
+            to! 😄
           </p>{" "}
           <p>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I&apos;m currently
