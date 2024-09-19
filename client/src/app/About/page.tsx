@@ -34,7 +34,7 @@ const Page = () => {
             <div className="font-light mt-10 mb-6  text-[20px] font-semibold">
               Collaborate with Me?
             </div>
-            <div className="mb-4 flex items-center">
+            {/* <div className="mb-4 flex items-center">
               {" "}
               <MailOutlined />
               <div className="font-light ml-[6px]">
@@ -46,7 +46,7 @@ const Page = () => {
                   sivasaikrishna.nekkalapu@sjsu.edu
                 </a>
               </div>
-            </div>
+            </div> */}
             <div className="mb-4 flex items-center">
               {" "}
               <MailOutlined />
@@ -79,10 +79,10 @@ const Page = () => {
                 <div className="font-light ml-[6px]">nssk.253</div>
               </div> */}
             </div>
-            <div className="mb-4 flex items-center">
+            {/* <div className="mb-4 flex items-center">
               <PhoneFilled /> <WhatsAppOutlined className="ml-[6px]" />
               <div className="font-light ml-[6px]">408 210 4147</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-[50%] max-md:w-full text-justify">
