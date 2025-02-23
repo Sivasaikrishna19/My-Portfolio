@@ -1,5 +1,13 @@
 export const projects = [
   {
+    img:"https://i.ibb.co/tpbdzyWG/Whats-App-Image-2025-02-22-at-21-46-30.jpg",
+    name:"ProfileVerse",
+    desc:"ProfileVerse is an AI-powered recruitment analysis platform that leverages LLMs, GitHub analytics, and data visualization to streamline technical hiring. It automates resume parsing, GitHub activity analysis, and AI-driven insights, helping recruiters make data-backed, unbiased hiring decisions. Built with Next.js, Spring Boot, and PostgreSQL, ProfileVerse integrates LLMs for skill extraction and GitHub APIs for real-world coding assessment. Featuring interactive dashboards and CI/CD automation with Jenkins and Docker, it enhances hiring efficiency by over 60%, bridging the gap between resumes and actual technical expertise.",
+    git:"https://github.com/Sivasaikrishna19/ProfileVerse",
+    start_date:"05-12-2024",
+    end_date:""
+  },
+  {
     img: "https://user-images.githubusercontent.com/26500550/146297406-eb97f213-2380-48fb-a7ae-86b54965199c.png",
     name: "CineSquare",
     desc: "Developed a Movie Ticket Booking web application utilizing React for the frontend and Django for the backend. Successfully hosted the application on an EC2 AWS instance, showcasing proficiency in full-stack development, deployment, and integration of key technologies.",
@@ -13,7 +21,7 @@ export const projects = [
     desc: "Developing a web application to assist students in finding accommodations near universities, employing React, Redux, Tailwind, and Flask. I've seamlessly integrated Google Auth for enhanced security. Embracing this opportunity to learn and expand my skill set.",
     git: "https://github.com/Sivasaikrishna19/Accomate",
     start_date: "11-10-2023",
-    end_date: "",
+    end_date: "02-10-2024",
   },
   {
     img: "https://indatalabs.com/wp-content/uploads/2022/03/activity-recognition-sports.jpeg",
