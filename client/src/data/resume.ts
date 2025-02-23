@@ -12,15 +12,15 @@ export const resume = {
       role: "Software Developer",
       company: "Maximl Labs Pvt. LTD, Bangalore, India",
       desc: "Full-stack developer for a Permit-to-Work web app, enhancing industrial safety with React, TypeScript, and NestJS, achieving a 77% reduction in on-site accidents. Implemented CI/CD pipelines at key stages, ensuring seamless deployment and maintaining focus on enhancing safety. ",
-      start_date: "07-04-2022",
+      start_date: "07-04-2021",
       end_date: "07-28-2023",
     },
     {
       role: "Software Developer Intern",
       company: "Maximl Labs Pvt. LTD, Bangalore, India",
       desc: "As a Frontend Developer, I used Angular and React to create a dynamic Template Marketplace and Builder. This simplified the checklist generation process, democratizing Maximl's work. Checklists seamlessly render within the Marketplace for user-friendly experience.",
-      start_date: "01-04-2022",
-      end_date: "07-03-2022",
+      start_date: "01-05-2021",
+      end_date: "08-28-2021",
     },
     {
       role: "Freelance Frontend Developer",
