@@ -48,7 +48,7 @@ export default function Home() {
         <div className="w-[50%] flex max-md:w-full">
           <div className="m-auto">
             <div className="mb-4 sm:hidden w-full flex justify-center">
-              <div className=" w-[250px] h-[250px] ">
+              <div className=" w-[250px] h-[250px]">
                 <Image
                   alt="Avatar Image"
                   src={about.img}
@@ -60,11 +60,11 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="text-[48px] mb-6 typed font-thin max-md:text-[24px]">
+            <div className="text-[48px] typed mb-4 font-thin max-md:text-[24px]">
               Hey there, I&apos;m Siva.
-              <div className="text-[18px] text-gray-600 max-md:text-[14px]">
-                SWE Intern, NBCUniversal (June 2024 - Present)
-              </div>
+            </div>
+            <div className="text-[18px] text-gray-600 max-md:text-[14px]">
+              SWE Intern, NBCUniversal (June 2024 - Present)
             </div>
             <div className="text-[24px] mb-3 font-semibold max-md:text-[16px]">
               A Bit About Me
