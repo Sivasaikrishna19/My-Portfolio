@@ -2,7 +2,7 @@ export const resume = {
   work_experience: [
     {
       role: "Software Engineering Intern",
-      company: "NBCUniversal, New York, USA",
+      company: "NBCUniversal, San Jose, USA",
       desc: "Contributed significantly to the NBCU ITSM platform by developing advanced features using JavaScript, optimizing workflows, and enhancing on-call notification systems, resulting in a 30% reduction in incident response times. Successfully integrated NetApp Cloud Insights for automated storage issue monitoring and incident creation, streamlining the event management process. Configured and tested secure API connections and pull connectors, ensuring robust data synchronization between ServiceNow and external monitoring systems.",
       start_date: "06-03-2024",
       end_date: "",
@@ -54,7 +54,7 @@ export const resume = {
       in_progress: false,
       major: "Computer Science and Engineering",
       minor: "",
-      gpa: "3.61",
+      gpa: "3.7",
     },
   ],
   skills: {
