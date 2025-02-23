@@ -8,7 +8,7 @@ import { projects } from "@/data/projects";
 import { LinkOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import dayjs from "dayjs";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 const Page = () => {
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
@@ -22,10 +22,11 @@ const Page = () => {
   return (
     <>
       <div
-        className={`w-full pb-1 ${shouldAnimate
-          ? "page-enter page-enter-active"
-          : "page-exit page-exit-active"
-          }`}
+        className={`w-full pb-1 ${
+          shouldAnimate
+            ? "page-enter page-enter-active"
+            : "page-exit page-exit-active"
+        }`}
       >
         <div className="font-semibold text-[42px] w-[70%] m-auto mb-8 max-md:w-[85%]">
           Projects
@@ -56,10 +57,19 @@ const Page = () => {
                         ? "Present"
                         : dayjs(project?.end_date).format("MMM, YYYY"))}
                   </div>
-                  <div className="text-[18px] text-light text-justify">{project?.desc}</div>
+                  <div className="text-[18px] text-light text-justify">
+                    {project?.desc}
+                  </div>
                 </div>
-                <div className="w-[40%] max-md:w-full max-md:hidden">
-                  {<Tilt scale={1} transitionSpeed={2500}><img src={project?.img} className="w-3/4 h-auto shadow-[#e0b47e] shadow-md" /></Tilt>}
+                <div className="w-[40%] flex flex-col justify-center max-md:w-full max-md:hidden">
+                  {
+                    <Tilt scale={1} transitionSpeed={2500}>
+                      <img
+                        src={project?.img}
+                        className="w-3/4 h-auto shadow-[#e0b47e] shadow-md"
+                      />
+                    </Tilt>
+                  }
                 </div>
               </div>
               {/* {index !== projects.length - 1 && (
@@ -71,7 +81,7 @@ const Page = () => {
           );
         })}
         <Footer />
-      </div >
+      </div>
     </>
   );
 };
