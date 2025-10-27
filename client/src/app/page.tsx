@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { about } from "@/data/about";
 import Tilt from "react-parallax-tilt";
+import { Avatar } from "antd";
 
 export default function Home() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -33,7 +34,7 @@ export default function Home() {
       <div className="w-[80%] m-auto flex ">
         <div className="w-[50%] m-auto flex justify-center profile-pic p-8 max-md:hidden">
           {/* <Tilt scale={1} transitionSpeed={2500}> */}
-          <Image
+          {/* <Image
             alt="Avatar Image"
             src={about.img}
             width={500}
@@ -41,6 +42,14 @@ export default function Home() {
             loading={"lazy"}
             className="rounded-full shadow-[#e0b47e] shadow-xl"
             layout="responsive"
+          /> */}
+          <Avatar
+            src={about.img}
+            size={480} // ✅ keeps exact size across layouts
+            shape="circle" // ✅ perfectly circular
+            style={{
+              boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
+            }}
           />
           {/* </Tilt> */}
         </div>
@@ -64,9 +73,9 @@ export default function Home() {
               Hey there, I&apos;m Siva.
             </div>
             <div className="text-[18px] text-gray-600 max-md:text-[14px]">
-              SWE Intern, NBCUniversal (June 2024 - Present)
+              Software Engineer, Amazon Web Services (May 2025 – Present)
             </div>
-            <div className="text-[24px] mb-3 font-semibold max-md:text-[16px]">
+            <div className="text-[24px] my-3 font-semibold max-md:text-[16px]">
               A Bit About Me
             </div>
             <p className="font-light mb-8 text-[18px] max-md:text-[14px] text-justify">

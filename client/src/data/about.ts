@@ -1,5 +1,5 @@
 export const about: any = {
   about:
-    "I'm a Software Engineering intern at NBCUniversal and a final-year Software Engineering student at San Jose State University. With over 4 years of experience in technologies like React, Next, Angular, React Native, Nest, Node, and both relational and non-relational databases, I am actively seeking full-time opportunities to contribute.",
-  img: "https://i.ibb.co/BtVJWVf/Whats-App-Image-2023-11-17-at-1-46-01-PM.jpg",
+    "I'm a Full Stack Engineer at Amazon Web Services, building scalable and intuitive experiences for the S3 Console using React, TypeScript, Java, and Spring Boot. With over 4 years of experience across frontend, backend, and DevOps, I focus on crafting performant and accessible systems that deliver measurable impact for thousands of AWS customers worldwide.",
+  img: "https://i.ibb.co/JW4CVYcC/Whats-App-Image-2025-10-18-at-20-25-18.jpg",
 };
